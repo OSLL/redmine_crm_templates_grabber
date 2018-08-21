@@ -7,12 +7,12 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--login', required=True)
-parser.add_argument('--password', required=True)
-parser.add_argument('--project', required=True)
-parser.add_argument('--host', required=True)
-parser.add_argument('--start_id', required=True, type=int)
-parser.add_argument('--end_id', required=True, type=int)
+parser.add_argument('--login', required=True, help="Redmine login")
+parser.add_argument('--password', required=True, help="Redmine password")
+parser.add_argument('--project', required=True, help="Project ID from redmine URLs")
+parser.add_argument('--host', required=True, help="Redmine host")
+parser.add_argument('--start_id', required=True, type=int, help="Id of the first template")
+parser.add_argument('--end_id', required=True, type=int, help="Id of the last template")
 
 results = parser.parse_args()
 
