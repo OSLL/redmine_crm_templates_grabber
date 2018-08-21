@@ -1,0 +1,1 @@
+# redmine_crm_templates_grabber
